@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <header>
+        <h2>KALKULATOR KONVERSI SUHU</h2>
+        <p>Masukan suhu derajat ke kotak di bawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi</p>
+    </header>
+
+    <main>
+        <br>
+        <form action="" name="kalkulator">
+            <label for="inputan" id="labelInputan">Celcius (&deg;C) :</label>
+            <textarea  name="inputan" id="inputan"></textarea><br>
+
+            <div class="button">
+                <input type="submit" value="Konversi" onclick="return validateForm()"></input>
+                <input type="reset" value="Reset" onclick="return resetAll()"></input>
+                <input type="button" value="Reverse" onclick="return reverse()"></input>    
+            </div><br>
+
+            <label for="outputan" id="labelOutputan">Fahrenheit (&deg;F) :</label>
+            <textarea name="outputan" id="outputan" cols="30" rows="3" readonly></textarea><br>
+            
+            <label for="cara">Cara Kalkulasi :</label>
+            <textarea name="cara" id="cara" cols="30" rows="3" readonly></textarea>
+        </form><br><br>
+        <div id="caraKonversi" class="caraKonversi">
+            <span><h3><b>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</b></h3></span><hr>
+            <p>Suhu <b><i>S</i></b> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <b><i>S</i></b> dalam dearajat Celcius (&deg;C) kali 9/5 tambah 32.</p>
+            <p><b><i>S</i><sub>(&deg;F)</sub> = (<i>S</i><sub>(&deg;C)</sub> x 9/5) + 32</b></p>
+            atau
+            <p><b><i>S</i><sub>(&deg;F)</sub> = (<i>S</i><sub>(&deg;C)</sub> x 1.8) + 32</b></p>
+        </div>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>
