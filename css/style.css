@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background-color: #214151;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    text-align: center;
+    color: #EFF7E1;
+    padding: 12px;
+    font-size: 18px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    background-color: #dfdfdf;
+    color: #214151;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: inherit;
+    flex-direction: column;
+}
+.button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button>input{
+    width: 75px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    color: #EFF7E1;
+    background-color: #214151;
+}
+
+.button>input:focus{
+    background-color: #0e222c;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.caraKonversi {
+    text-align: center;
+    color: #EFF7E1;
+}
+
+.caraKonversi > *:not(:first-child){
+    margin: 10px;
+}
